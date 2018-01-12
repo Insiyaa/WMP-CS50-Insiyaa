@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    PORTFOLIO
+{% endblock %}
+
+{% block main %}
+    <table style="width:100%; border: 3px solid #000000;">
+      <thead style="font-size: 15px;font-weight: bold;color: #000000;text-align: left;">
+      <tr>
+        <th>Symbol</th>
+        <th>Name</th>
+        <th>Shares</th>
+        <th>Price</th>
+        <th>TOTAL</th>
+      </tr>
+      </thead>
+    {% for stock in stocks %}
+      <tr style="border: 1px solid #000000; padding: 5px 4px;">
+        <td style="font-weight: bold">{{ stock.symbol }}</td>
+        <td style="font-weight: bold">{{ stock.symbol }}</td>
+        <td>{{ stock.number }}</td>
+        <td>{{ stock.value }}</td>
+        <td>{{ stock.total }}</td>
+      </tr>
+    {% endfor %}
+      <tr style="border: 1px solid #000000; padding: 5px 4px;">
+        <td>CASH</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>{{ cash }}</td>
+      </tr>
+      <tr style="border: 1px solid #000000; padding: 5px 4px;">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><b>{{ worth }}</b></td>
+      </tr>
+    </table>
+{% endblock %}

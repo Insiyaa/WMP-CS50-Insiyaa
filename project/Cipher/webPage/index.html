@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Step Cipher
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+        <link rel="text/javascript" href="script/script.js">
+        <link rel="text/javascript" href="css/bootstrap/js/bootstrap.min.js">
+        <link href="https://fonts.googleapis.com/css?family=Joti+One" rel="stylesheet">
+        <script src="scripts/script.js"></script>
+        <style>
+            /* {
+                border: 2px solid red;
+            }*/
+            h1 {
+                color: rgb(171, 174, 177);
+                font-family: 'Joti One', cursive;
+            }
+            .head {
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Step Cipher</a>
+                </div>
+                <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Crypt</a></li>
+                <li><a href="decipher.html">Decrypt</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="plainText">Plain text</label>
+                    <input type="text" class="form-control" id="plainText" placeholder="Enter your text here">
+                </div>
+                <div class="form-group">
+                    <label for="code">Code(only alphabets)</label>
+                    <input type="password" class="form-control" id="code" placeholder="Enter the code">
+                </div>
+                <div class="form-group">
+                    <label for="step">Step</label>
+                    <input type="number" class="form-control" id="step" placeholder="Enter your step here" min="0">
+                </div>
+                <button class="btn btn-default" onclick="go(); return false;" onsubmit="return false;">Submit</button>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+            </div>
+        </div>
+        <div class="well" id="well">You'll get your crypted text here!</div>
+    </body>
+</html>

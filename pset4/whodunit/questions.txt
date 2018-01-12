@@ -1,0 +1,12 @@
+1.  <stdint.h> is header which declares set of integer type having specified width( the number of bits used to store its value in a pure binary system)
+2.  uintN_t is an unsigned integer of N bits, while intN_t is a signed integer of N bits. Now a size of structure is addition of memory occupied by its elements. Hence for proper memory allocation of HEADER files this specified "width" data types are used.
+3.  BYTE = 1 byte, DWORD = 4 bytes, LONG = 4 bytes, WORD = 2 bytes.
+4.  ASCII: BM, HEX: 424d
+5.  bfsize is size(in bytes) of bitmap file, while bisize is the size required by the structure.
+6.  If biHeight is negative, the bitmap is a top-down DIB and its origin is the upper-left corner.
+7.  biBitCount
+8.  Maybe the file doesn't exist or the permission is denied.
+9.  It reads one data element of size 14 bytes at a time.
+10. 3, as sizeof(RGBTRIPLET) is 3.
+11. Doesn't copy paddings...
+12. If you pass it as the third parameter to fseek(), that function will know that you want to move the file pointer relative to its current position.

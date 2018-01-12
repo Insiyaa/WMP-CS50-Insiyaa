@@ -1,0 +1,12 @@
+0.  An obscure term ostensibly referring to a lung disease caused by silica dust, sometimes cited as one of the longest words in the English language.
+1.  Stands for get resources usage. Returns resource usage as a structure.
+2.  16
+3.  Because the second parameter of getrusage is supposed to be a pointer.
+4.  Using fgetc() it reads characters from the file and checks if EOF is reached or not. If not it proceeds in the loop.
+    If characters is alphabet or apostrophe (but not at start), the character is appended to the word. If the length of current
+    word exceeds the length of maximum possible word or the word contains digits, get cursor (in file) to end and go for new word.
+    If a word is found, terminate it with '\0' and increment words counter. Check it's spelling, get resourse usage, print misspelled
+    words (incrementing misspelled counter) and prepare for new word.
+5.  It takes formatted input, and any change in it can leave the pointer in an unknown state.
+6.  Because both files are to be opened in read mode and aren't meant to be editted, just read and checked through.
+
